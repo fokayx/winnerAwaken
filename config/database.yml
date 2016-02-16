@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: ruwei5x_development
+
+test:
+  <<: *default
+  database: ruwei5x_test
+
+production:
+  <<: *default
+  database: ruwei5x_production
+  username: ruwei5x
+  password: <%= ENV['RUWEI5X_DATABASE_PASSWORD'] %>
