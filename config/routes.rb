@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'ruweis#index'
+  root 'ruweis#new'
   resources :ruweis
 end
