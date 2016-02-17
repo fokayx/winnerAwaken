@@ -13,6 +13,8 @@ class RuweisController < ApplicationController
 
     if @ruwei.save
       redirect_to root_path, notice: '成功成為魯味'
+    else
+      render :new
     end
   end
 

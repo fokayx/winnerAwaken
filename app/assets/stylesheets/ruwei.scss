@@ -16,7 +16,7 @@ body {
     color: #999999;
     width: 55%;
     height: 50px;
-    margin: 40px auto;
+    margin: 50px auto 20px;
     background-color: #1a1a1a;
     border-color: #ffff00;
     outline: 0;
@@ -42,6 +42,7 @@ body {
     width: 55%;
     height: 50px;
     font-weight: 900;
+    margin-top: 30px;
     
     &:hover {
       background-color: #1a1a1a;
