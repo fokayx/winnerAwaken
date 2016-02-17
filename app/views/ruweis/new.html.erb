@@ -1,6 +1,13 @@
-<h1> Hello RuWei </h1>
-<%= simple_form_for(@ruwei) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :email %>
-  <%= f.button :submit %>
-<% end %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 ruwei5x">
+    <%= image_tag("5xRuWei.png", class: 'img5xText') %>
+
+    <%= simple_form_for(@ruwei) do |f| %>
+      <%= f.input :name, placeholder: "Name", label: false, input_html: {class: "inputRuwei"} %>
+      <%= f.input :email, placeholder: "Email", label: false, input_html: {class: "inputRuwei"} %>
+      <%= f.button :submit, '魯味覺醒', class:"awakenButton" %>
+    <% end %>
+
+    <%= image_tag("5xLogo.png", class: 'img5xLogo') %>
+  </div>
+</div>
