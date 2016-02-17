@@ -1,8 +1,4 @@
 class RuweisController < ApplicationController
-  def index
-    @ruweis = Ruwei.all
-    @ruwei = Ruwei.new
-  end
 
   def new
     @ruwei = Ruwei.new
