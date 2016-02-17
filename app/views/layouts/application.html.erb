@@ -9,9 +9,7 @@
 <body>
 
   <div class="container">
-    <div class="alert alert-success">
-      <%= flash[:notice] %>
-    </div>
+    <%= render 'flash' %>
     <%= yield %>
   </div>
 
