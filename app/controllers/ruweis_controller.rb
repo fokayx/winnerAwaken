@@ -9,7 +9,7 @@ class RuweisController < ApplicationController
 
     if @ruwei.save
       RuweiMailer.awaken_email(@ruwei).deliver_later
-      redirect_to root_path, notice: '成功激發五倍魯味'
+      redirect_to root_path, notice: '成功激發五倍魯味覺醒'
     else
       render :new
     end
