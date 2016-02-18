@@ -3,8 +3,8 @@
     <%= image_tag("5xRuWei.png", class: 'img5xText') %>
 
     <%= simple_form_for(@ruwei) do |f| %>
-      <%= f.input :name, placeholder: "Name", label: false, input_html: {class: "inputRuwei"} %>
-      <%= f.input :email, placeholder: "Email", label: false, input_html: {class: "inputRuwei"} %>
+      <%= f.input :name, placeholder: "Name", label: false, input_html: {autocomplete: 'off', class: "inputRuwei"} %>
+      <%= f.input :email, placeholder: "Email", label: false, input_html: {autocomplete: 'off', class: "inputRuwei"} %>
       <%= f.button :submit, '魯味覺醒', class:"awakenButton" %>
     <% end %>
 
