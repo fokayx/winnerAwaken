@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   gem 'byebug'
