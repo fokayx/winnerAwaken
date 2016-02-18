@@ -21,3 +21,6 @@ group :development do
   gem 'spring'
 end
 
+group :prdouction do
+  gem 'rails_12factor'
+end
