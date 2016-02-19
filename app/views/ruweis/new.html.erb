@@ -10,16 +10,16 @@
 
     <%= image_tag("5xLogo.png", class: 'img5xLogo') %>
 
-    <div class="example-item">
+    <div class="light5x-item">
       <div class="lightsaber">
         <label for="darth-vader-left" class="label-left"></label>
-        <input type="checkbox" id="darth-vader-left" name="c">
+        <input type="checkbox" id="darth-vader-left">
         <div class="switch switch-left"></div>
         <div class="plasma vader plasma-left"></div>
-      </div>
-      <div class="lightsaber">
+        </div>
+        <div class="lightsaber">
         <label for="darth-vader-right"></label>
-        <input type="checkbox" id="darth-vader-right" name="c">
+        <input type="checkbox" id="darth-vader-right">
         <div class="switch"></div>
         <div class="plasma vader plasma-right"></div>
       </div>
@@ -32,5 +32,5 @@
   $(".awakenButton").click(function(){
      document.getElementById("darth-vader-left").checked = true;
      document.getElementById("darth-vader-right").checked = true;
-      });
+  });
 </script>
