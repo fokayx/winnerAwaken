@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'ruweis#new'
-  resources :ruweis, only: [:new, :create]
+  resources :winners, only: [:new, :create], :controller => "ruweis"
 end
