@@ -7,11 +7,11 @@
   cursor: pointer;
   position: absolute;
   bottom: 6px;
-  right: 177px;
+  right: 23%;
   z-index: 88;
   text-indent: -9999px;
-  width: 36px;
-  height: 9px;
+  width: 10%;
+  height: 6px;
   border-right: solid 3px grey;
   border-left: solid 3px grey;
   border-radius: 2px;
@@ -30,19 +30,19 @@
 }
 
 .lightsaber .label-left {
-  left: 176px;
+  left: 23%;
   border-right: solid 3px grey;
   border-left: solid 3px grey;
 }
 
 .lightsaber .switch {
   background: #B94A37;
-  width: 10px;
-  height: 5px;
-  display: block;
+  width: 8px;
+  height: 4px;
   position: absolute;
-  bottom: 18px;
-  right: 185px;
+  display: block;
+  bottom: 15px;
+  right: 25%;
   transition: left 200ms;
   -moz-transition: left 200ms;
   -webkit-transition: left 200ms;
@@ -56,7 +56,7 @@
 }
 
 .lightsaber .switch-left {
-	left: 185px;
+	left: 25%;
 }
 
 .lightsaber input[type=checkbox] {
@@ -90,26 +90,24 @@
   height: 0;
 }
 .lightsaber .plasma-right {
-  left: 376px;
+  left: 76%;
 }
 .lightsaber .plasma-left {
-  right: 376px;
+  right: 76%;
 }
 
 .lightsaber input[type=checkbox]:checked ~ div.plasma-left, .lightsaber input[type=checkbox]:checked ~ div.plasma-right {
-  height: 7px;
-  width: 150px;
+  height: 4px;
+  width: 30%;
 }
 
 .lightsaber input[type=checkbox]:hover ~ div.switch {
   background: #c09853;
-  right: 185px;
-  
 }
 
 .lightsaber input[type=checkbox]:checked ~ div.switch {
   background: #468847;
-  bottom: 17px;
+  bottom: 14px;
 }
 
 .vader {
