@@ -20,6 +20,11 @@ body {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px rgba(249, 45, 45, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px rgba(249, 45, 45, 0.6);
   }
+  span.help-block {
+    position: absolute;
+    top: 110%;
+    left: 20%;
+  }
 
   .img5xText {
     width: 90%;
