@@ -12,6 +12,7 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'delayed_job_active_record'
 gem 'devise'
+gem 'axlsx_rails'
 
 group :development, :test do
   gem 'byebug'

@@ -1,0 +1,8 @@
+
+wb = xlsx_package.workbook
+wb.add_worksheet(name: "export") do |sheet|
+    sheet.add_row ["Name","Email"]
+    @winners.each do |winner|
+        sheet.add_row [winner.name, winner.email]
+    end
+end
