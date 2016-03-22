@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>五倍溫拿覺醒</title>
+  <%= stylesheet_link_tag    'daikichi', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag %>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+</head>
+<body>
+
+  <div class="container">
+    <%= render 'flash' %>
+    <%= yield %>
+  </div>
+
+</body>
+</html>
