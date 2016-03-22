@@ -18,4 +18,7 @@ class ApplicationController < ActionController::Base
       redirect_to '/', notice:'No Entry'
     end
   end
+  def after_sign_in_path_for(ruweis)
+    daikichi_ruweis_path(ruweis)
+  end
 end
