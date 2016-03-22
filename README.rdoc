@@ -1,28 +1,27 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. bundle install
 
-Things you may want to cover:
+2. rake db:migraete
 
-* Ruby version
+3. add file config/initializers/app_secret.rb 
 
-* System dependencies
+set mail deliver sevice account and password
 
-* Configuration
+```
+ENV["MANDRILL_USERNAME"] = "your mail"
+ENV["MANDRILL_PASSWORD"] = "your passwor"
+```
 
-* Database creation
+4. if need admin managerment 
 
-* Database initialization
+```
+# /config/routes.rb
 
-* How to run the test suite
+devise_for :admins, path: "daikichi/admins", :skip => 'registrations'
 
-* Services (job queues, cache servers, search engines, etc.)
+delelte :skip => 'registrations', make registration enable
 
-* Deployment instructions
+devise_for :admins, path: "daikichi/admins",
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+```
